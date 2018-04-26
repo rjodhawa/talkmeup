@@ -1,4 +1,3 @@
-README.md
 # talkmeup
 Django(Backend) + react (Frontend) =.> total awesomeness. Made a project for interview with talkmeup.co
 

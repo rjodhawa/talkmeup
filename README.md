@@ -1,15 +1,19 @@
-# talkmeup
-Django(Backend) + react (Frontend) =.> total awesomeness. Made a project for interview with talkmeup.co
+# High level overview
+This project is to create a simple user registration page. To demonstrate - separation of concern. Performed form validation by checking if the password and confirm password field matches. Used SQLite as the backend DB to store user-related information. Addtionally, I have used email authentication (from sendgrid.com) and maintained which user has authenticated his/her account and which have not, in the backend SQLite Database.
+
+# Short Description of technologies used
+Django(Backend) + react (Frontend) => total awesomeness.
 
 # Installation
 1. git pull both backend and frontend folder.
 2. Start Virtual env provided.
-2. go to backend directory ( cd /backend) and run "python manage.py runserver" -- This runs the server backend made in Django.
-3. open a new cmd. Go in the Frontend directory (cd frontend) and run "yarn start" or npm start.
+3. pip install requirements.txt
+4. go to backend directory ( cd /backend) and run "python manage.py runserver" -- This runs the server backend made in Django.
+5. open a new cmd. Go in the Frontend directory (cd /frontend) and run "yarn start" or npm start.
 
 # Requirements
 1. Register button will only be showed if confirm password matched password. If at any point these two values changes, the submit button is hidden.
-2. once password is sorted, send an email to user's email address.
+2. Once password is sorted, send an email to user's email address.
 3. Click on the email address to open the page on react app. React app simply displays a welcome message.
 
 # Functionality Flow

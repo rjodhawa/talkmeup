@@ -22,3 +22,9 @@ boolean digit (to indicate if Email is verified or not)in sqlite DB -> Create a 
 # Goal
 1. The main goal for this project is to implement sepration of concern. Backend and Frontend does what they are supposed to do. They don't interchange their duties.
 2. Although, Using GET to send and receive password is discouraged. However, this is just the basic implementation of a bigger thing that can be achieved.
+
+# Caution
+Before running the server and/or frontend make sure that talkmeup/backend/signup/views.py has these two fieds initialized with your credentials from sendgrid:
+1. sg = sendgrid.SendGridAPIClient(apikey="<<SendGridAPI-Key>>")
+2. from_email = Email("<<Your email address>>")
+3. Additionally, you would want to put in your secret_key in settings.py 

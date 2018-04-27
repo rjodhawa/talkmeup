@@ -26,8 +26,8 @@ def index(request):
 
 def sendEmail(email, hashed_password):
     msg = "Hello! Welcome to TalkMeUp. Click on the link to get started : http://localhost:3000/?hash=" + hashed_password
-    sg = sendgrid.SendGridAPIClient(apikey="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")
-    from_email = Email("rjodhawa@andrew.cmu.edu")
+    sg = sendgrid.SendGridAPIClient(apikey="<<SendGridAPI-Key>>")
+    from_email = Email("<<Your email address>>")
     to_email = Email(email)
     subject = "Welcome to TalkMeUp"
     content = Content("text/plain", msg)

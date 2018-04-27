@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&3!j0t90^6^(998@xeuq)eomz0gin+mp59wl1vld2m!w-g*$#e'
+SECRET_KEY = '<Key django creates>'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -59,7 +59,6 @@ ROOT_URLCONF = 'backend.urls'
 
 CORS_ORIGIN_WHITELIST = (
     'google.com',
-    'hostname.example.com',
     'localhost:8000',
     '127.0.0.1:9000',
     'localhost:3000'
